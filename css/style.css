@@ -43,8 +43,18 @@
   flex-grow: 1;
   max-height: 100%;
   padding-left: 200px;
+  overflow: auto;
   /* debug */
   background-color: lightgrey;
+}
+
+.photo{
+  text-align: center;
+}
+
+.container-photos img{
+  max-width: 200px;
+  height: auto;
 }
 
 /* BARRA SUPERIORE */
@@ -53,25 +63,6 @@
   text-align: right;
   /* debug */
   background-color: lightgreen;
-}
-
-/* SEZIONE RECENTI */
-.recent{
-  background-color: white;
-}
-
-.container-photos{
-  display: flex;
-  justify-content: space-between;
-}
-
-.photo{
-  text-align: center;
-}
-
-.container-photos img{
-  max-width: 90%;
-  height: auto;
 }
 
 /* bottone */
@@ -83,6 +74,25 @@ button{
   /* debug */
   background-color: #000;
   color: #fff;
+}
+
+/* SEZIONE RECENTI */
+.recent{
+  background-color: white;
+}
+
+.recent .container-photos{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SEZIONE CREATI PER */
+.create{
+  background-color: white;
+}
+
+.create .container-photos{
+  display: flex;
 }
 
 /* SEZIONE DEL PLAYER */
