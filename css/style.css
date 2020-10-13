@@ -95,6 +95,19 @@ button{
   display: flex;
 }
 
+/* SEZIONE POPOLARI */
+.popular{
+  background-color: white;
+}
+
+.popular .container-photos{
+  display: flex;
+}
+
+.popular .container-photos .photo img{
+  border-radius: 50%;
+}
+
 /* SEZIONE DEL PLAYER */
 #player{
   display: flex;
