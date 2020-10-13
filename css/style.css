@@ -17,30 +17,32 @@
   flex-direction: column;
   justify-content: space-between;
   width: 200px;
-  max-height: 100%;
+  height: calc(100% - 100px);
+  position: fixed;
   /* debug */
   background-color: grey;
 }
 
 /* contenuto superiore */
-.top-content{
+.menu .top-content{
   background-color: orange;
 }
 
 /* contenitore della playlist */
-.playlist{
+.menu .playlist{
 
 }
 
 /* contenuto inferiore */
-.bottom-content{
+.menu .bottom-content{
   background-color: pink;
 }
 
 /* CONTENITORE PRINCIPALE */
 .container{
   flex-grow: 1;
-  height: 100%;
+  max-height: 100%;
+  padding-left: 200px;
   /* debug */
   background-color: lightgrey;
 }
@@ -51,6 +53,25 @@
   text-align: right;
   /* debug */
   background-color: lightgreen;
+}
+
+/* SEZIONE RECENTI */
+.recent{
+  background-color: white;
+}
+
+.container-photos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo{
+  text-align: center;
+}
+
+.container-photos img{
+  max-width: 90%;
+  height: auto;
 }
 
 /* bottone */
@@ -66,7 +87,26 @@ button{
 
 /* SEZIONE DEL PLAYER */
 #player{
+  display: flex;
   min-height: 100px;
-  /* debug */
-  background-color: lightblue;
+  position: fixed;
+  width: 100%;
+}
+
+/* contenuto sinistro */
+#player .left-content{
+  width: 200px;
+  background-color: red;
+}
+
+/* contenuto centrale */
+#player .central-content{
+  flex-grow: 1;
+  background-color: green;
+}
+
+/* contenuto destro */
+#player .right-content{
+  width: 200px;
+  background-color: yellow;
 }
