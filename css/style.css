@@ -48,8 +48,20 @@
 /* BARRA SUPERIORE */
 .top-bar{
   height: 100px;
+  text-align: right;
   /* debug */
   background-color: lightgreen;
+}
+
+/* bottone */
+button{
+  padding: 10px 40px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  /* debug */
+  background-color: #000;
+  color: #fff;
 }
 
 /* SEZIONE DEL PLAYER */
