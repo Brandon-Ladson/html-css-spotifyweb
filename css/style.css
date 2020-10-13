@@ -4,3 +4,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* regole sezione del contenuto */
+#principal{
+  height: calc(100vh - 100px);
+  display: flex;
+  /* debug */
+  background-color: orange;
+}
+
+/* regole menu laterale */
+.menu{
+  width: 200px;
+  height: 100%;
+  /* debug */
+  background-color: grey;
+}
+
+/* regole del contenitore principale */
+.container{
+  flex-grow: 1;
+  height: 100%;
+  /* debug */
+  background-color: lightgrey;
+}
+
+/* regole container */
+
+/* regole sezione del player */
+#player{
+  min-height: 100px;
+  /* debug */
+  background-color: lightblue;
+}
