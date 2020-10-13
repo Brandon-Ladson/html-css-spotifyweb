@@ -1,27 +1,43 @@
-/* regole generali */
+/* GENERALI */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* regole sezione del contenuto */
+/* SEZIONE DEL CONTENUTO */
 #principal{
   height: calc(100vh - 100px);
   display: flex;
-  /* debug */
-  background-color: orange;
 }
 
-/* regole menu laterale */
+/* MENU LATERALE */
 .menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
-  height: 100%;
+  max-height: 100%;
   /* debug */
   background-color: grey;
 }
 
-/* regole del contenitore principale */
+/* contenuto superiore */
+.top-content{
+  background-color: orange;
+}
+
+/* contenitore della playlist */
+.playlist{
+
+}
+
+/* contenuto inferiore */
+.bottom-content{
+  background-color: pink;
+}
+
+/* CONTENITORE PRINCIPALE */
 .container{
   flex-grow: 1;
   height: 100%;
@@ -29,9 +45,14 @@
   background-color: lightgrey;
 }
 
-/* regole container */
+/* BARRA SUPERIORE */
+.top-bar{
+  height: 100px;
+  /* debug */
+  background-color: lightgreen;
+}
 
-/* regole sezione del player */
+/* SEZIONE DEL PLAYER */
 #player{
   min-height: 100px;
   /* debug */
