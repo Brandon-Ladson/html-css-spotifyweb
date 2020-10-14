@@ -5,8 +5,16 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+}
+
 a{
   text-decoration: none;
+}
+
+.text{
+  color: #7d7f84;
 }
 
 /* SEZIONE DEL CONTENUTO */
@@ -23,17 +31,30 @@ a{
   justify-content: space-between;
   min-width: 200px;
   height: 100%;
-  /* debug */
-  background-color: grey;
-}
-
-/* contenuto superiore */
-.menu .top-content{
-  background-color: orange;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  background-color: #000;
 }
 
 .menu a{
   display: block;
+  margin-top: 5px;
+  color: #7d7f84;
+}
+
+/* contenuto superiore */
+.menu .top-content{
+  padding-right: 25%;
+}
+
+.menu .top-content .logo{
+  margin-bottom: 20px;
+}
+
+.menu .top-content h3{
+  margin-top: 30px;
 }
 
 /* contenitore della playlist */
@@ -42,8 +63,8 @@ a{
 }
 
 /* contenuto inferiore */
-.menu .bottom-content{
-  background-color: pink;
+.menu .bottom-content hr{
+  margin-top: 10px;
 }
 
 /* CONTENITORE PRINCIPALE */
@@ -51,8 +72,21 @@ a{
   flex-grow: 1;
   max-height: 100%;
   overflow: auto;
-  /* debug */
-  background-color: lightgrey;
+  color: #fff;
+  background-color: #141922;
+}
+
+.container h2, .text{
+  margin-left: 10px;
+}
+
+.container .text , h3{
+  margin-top: 10px;
+}
+
+.container-photos{
+  display: flex;
+  margin: 30px 0;
 }
 
 .container-photos .photo{
@@ -70,9 +104,9 @@ a{
   width: calc(100% - 200px);
   height: 100px;
   text-align: right;
+  padding-right: 10px;
   position: fixed;
-  /* debug */
-  background-color: lightgreen;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* bottone */
@@ -81,14 +115,14 @@ a{
   margin-top: 25px;
   border-radius: 20px;
   border: 2px solid #fff;
-  /* debug */
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
 }
 
 /* LISTA PAGINE */
 .container ul{
-  padding-top: 100px;
+  margin-top: 120px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -98,33 +132,11 @@ a{
 }
 
 /* SEZIONE RECENTI */
-.recent{
-
-}
-
 .recent .container-photos{
-  display: flex;
   justify-content: space-between;
 }
 
-/* SEZIONE CREATI PER */
-.create{
-
-}
-
-.create .container-photos{
-  display: flex;
-}
-
 /* SEZIONE POPOLARI */
-.popular{
-
-}
-
-.popular .container-photos{
-  display: flex;
-}
-
 .popular .container-photos .photo img{
   border-radius: 50%;
 }
