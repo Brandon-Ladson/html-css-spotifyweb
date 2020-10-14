@@ -24,8 +24,8 @@ a{
   overflow: hidden;
 }
 
-/* MENU LATERALE */
-.menu{
+/* MENU LATERALE GRANDE */
+#large-menu{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,38 +36,66 @@ a{
   background-color: #000;
 }
 
-.menu a{
+#large-menu a{
   display: block;
   margin-top: 5px;
   color: #7d7f84;
 }
 
-.menu a:hover{
+#large-menu a:hover{
   color: #fff;
   border-left: 2px solid #adff2f;
 }
 
 /* contenuto superiore */
-.menu .top-content{
+#large-menu .top-content{
   padding-right: 25%;
 }
 
-.menu .top-content .logo{
+#large-menu .top-content .logo{
   margin-bottom: 20px;
 }
 
-.menu .top-content h3{
+#large-menu .top-content h3{
   margin-top: 30px;
 }
 
 /* contenitore della playlist */
-.menu .playlist{
+#large-menu .playlist{
   overflow: auto;
 }
 
 /* contenuto inferiore */
-.menu .bottom-content hr{
+#large-menu .bottom-content hr{
   margin-top: 10px;
+}
+
+/* MENU KATERALE PICCOLO */
+#small-menu{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 50px;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  background-color: #000;
+}
+
+#small-menu a{
+  display: block;
+  margin: 5px 0;
+  color: #7d7f84;
+}
+
+#small-menu a:hover{
+  color: #fff;
+  border-left: 2px solid #adff2f;
+}
+
+#small-menu .top-content .logo img{
+  width: 20px;
 }
 
 /* CONTENITORE PRINCIPALE */
@@ -280,6 +308,18 @@ a{
 
 /* REGOLE EXTRA SMALL */
 @media all and (max-width: 768px){
+
+  #large-menu{
+    display: none;
+  }
+
+  #small-menu{
+    display: flex;
+  }
+
+  .top-bar{
+    width: calc(100% - 50px);
+  }
 
   .container-photos{
     display: flex;
