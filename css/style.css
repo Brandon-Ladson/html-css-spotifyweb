@@ -42,6 +42,11 @@ a{
   color: #7d7f84;
 }
 
+.menu a:hover{
+  color: #fff;
+  border-left: 2px solid #adff2f;
+}
+
 /* contenuto superiore */
 .menu .top-content{
   padding-right: 25%;
@@ -57,7 +62,7 @@ a{
 
 /* contenitore della playlist */
 .menu .playlist{
-
+  overflow: auto;
 }
 
 /* contenuto inferiore */
@@ -87,14 +92,40 @@ a{
   margin: 30px 0;
 }
 
+/* foto */
 .container-photos .photo{
   text-align: center;
   width: calc(100% / 6);
+  color: #fff;
 }
 
+/* contenitore immagini e icona */
+.container-photos .photo .cover{
+  position: relative;
+}
+
+/* icona */
+.container-photos .photo i{
+  display: none;
+  position: absolute;
+  font-size: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-photos .photo:hover i{
+  display: block;
+}
+
+/* immagine */
 .container-photos img{
   max-width: 90%;
   height: auto;
+}
+
+.container-photos .photo:hover img{
+  filter: brightness(40%);
 }
 
 /* BARRA SUPERIORE */
@@ -102,7 +133,7 @@ a{
   width: calc(100% - 230px);
   height: 100px;
   text-align: right;
-  padding-right: 10px;
+  padding-right: 20px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -115,6 +146,10 @@ a{
   border: 2px solid #fff;
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
+}
+
+.top-bar button:hover{
+  transform: scale(1.1);
 }
 
 /* LISTA PAGINE */
@@ -131,6 +166,12 @@ a{
 
 .container ul li a{
   color: #7d7f84;
+  padding-bottom: 5px;
+}
+
+.container ul li a:hover{
+  color: #fff;
+  border-bottom: 1px solid #adff2f;
 }
 
 /* SEZIONE RECENTI */
@@ -180,6 +221,11 @@ a{
   color: #7d7f84;
 }
 
+#player .left-content .name a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* icone */
 #player .left-content .icons{
   float: right;
@@ -187,7 +233,12 @@ a{
 }
 
 #player .left-content .icons i{
+  color: #7d7f84;
   margin-left: 5px;
+}
+
+#player .left-content .icons i:hover{
+  color: #fff;
 }
 
 /* contenuto centrale */
@@ -204,6 +255,11 @@ a{
 #player .central-content .top-content i{
   margin: 0 10px;
 }
+
+#player .central-content .top-content .fa-play-circle:hover{
+  transform: scale(1.1);
+}
+
 /* contenuto inferiore */
 #player .central-content .bottom-content{
   text-align: center;
