@@ -32,6 +32,10 @@ a{
   background-color: orange;
 }
 
+.menu a{
+  display: block;
+}
+
 /* contenitore della playlist */
 .menu .playlist{
 
@@ -114,7 +118,7 @@ a{
 
 /* SEZIONE POPOLARI */
 .popular{
-  
+
 }
 
 .popular .container-photos{
