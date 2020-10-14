@@ -150,6 +150,7 @@ a{
 
 .top-bar button:hover{
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 /* LISTA PAGINE */
