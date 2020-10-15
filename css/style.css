@@ -101,7 +101,6 @@ a{
 #small-menu .top-content i{
   display: block;
   font-size: 20px;
-  /* margin: 5px 0; */
   margin-top: 10px;
   color: #7d7f84;
 }
@@ -262,7 +261,6 @@ a{
 /* contenuto sinistro */
 #player .left-content{
   width: 230px;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
