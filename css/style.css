@@ -274,8 +274,12 @@ a{
 
 /* contenuto superiore */
 #player .central-content .top-content{
-  text-align: center;
-  line-height: 50px;
+  /* text-align: center;
+  line-height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 #player .central-content .top-content i{
@@ -288,8 +292,6 @@ a{
 
 /* contenuto inferiore */
 #player .central-content .bottom-content{
-  /* text-align: center;
-  line-height: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,15 +308,20 @@ a{
 /* contenuto destro */
 #player .right-content{
   width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* icone */
-#player .right-content .icons{
-  line-height: 100px;
-}
-
-#player .right-content .icons i{
+#player .right-content i{
   margin-right: 10px;
+}
+
+#player .right-content .volume{
+  height: 6px;
+  width: 50%;
+  background: linear-gradient(90deg, #cecece 20%, #7d7f84 0%);
+  border-radius: 3px;
 }
 
 /* REGOLE EXTRA SMALL */
