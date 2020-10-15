@@ -223,24 +223,20 @@ a{
 /* contenuto sinistro */
 #player .left-content{
   width: 230px;
-  padding: 0 8px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* immagine */
-#player .left-content .photo{
-  float: left;
-  margin-top: 25px;
-}
-
 #player .left-content .photo img{
   height: 50px;
 }
 
 /* nome brano */
 #player .left-content .name{
-  float: left;
-  margin-top: 33px;
-  padding-left: 5px;
+  margin: 0 10px;
 }
 
 #player .left-content .name a{
@@ -253,11 +249,6 @@ a{
 }
 
 /* icone */
-#player .left-content .icons{
-  float: right;
-  line-height: 100px;
-}
-
 #player .left-content .icons i{
   color: #7d7f84;
   margin-left: 5px;
@@ -274,8 +265,6 @@ a{
 
 /* contenuto superiore */
 #player .central-content .top-content{
-  /* text-align: center;
-  line-height: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +338,10 @@ a{
     text-align: center;
     width: calc(100% / 2);
     color: #fff;
+  }
+
+  #player .right-content{
+    flex-wrap: wrap;
   }
 }
 
