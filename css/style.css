@@ -62,7 +62,7 @@ a{
 
 /* contenitore della playlist */
 #large-menu .playlist{
-  overflow: auto;
+
 }
 
 /* contenuto inferiore */
@@ -288,8 +288,19 @@ a{
 
 /* contenuto inferiore */
 #player .central-content .bottom-content{
-  text-align: center;
-  line-height: 50px;
+  /* text-align: center;
+  line-height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player .central-content .bottom-content .timeline{
+  height: 6px;
+  width: 60%;
+  background: linear-gradient(90deg, #cecece 20%, #7d7f84 0%);
+  border-radius: 3px;
+  margin: 0 10px;
 }
 
 /* contenuto destro */
