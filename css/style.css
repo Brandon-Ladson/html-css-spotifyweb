@@ -72,7 +72,8 @@ a{
 
 /* contenitore della playlist */
 #large-menu .playlist{
-
+  max-height: 160px;
+  overflow-y: auto;
 }
 
 /* contenuto inferiore */
@@ -324,11 +325,28 @@ a{
 }
 
 #player .central-content .bottom-content .timeline{
+  position: relative;
   height: 6px;
   width: 60%;
   background: linear-gradient(90deg, #cecece 20%, #7d7f84 0%);
   border-radius: 3px;
   margin: 0 10px;
+}
+
+#player .central-content .bottom-content .timeline:hover{
+  background: linear-gradient(90deg, #adff2f 20%, #7d7f84 0%);
+  cursor: pointer;
+}
+
+#player .central-content .bottom-content .timeline .fa-circle{
+  position: absolute;
+  display: none;
+  left: 19%;
+  top: -5px;
+}
+
+#player .central-content .bottom-content .timeline:hover .fa-circle{
+  display: block;
 }
 
 /* contenuto destro */
@@ -344,10 +362,27 @@ a{
 }
 
 #player .right-content .volume{
+  position: relative;
   height: 6px;
   width: 50%;
   background: linear-gradient(90deg, #cecece 20%, #7d7f84 0%);
   border-radius: 3px;
+}
+
+#player .right-content .volume:hover{
+  background: linear-gradient(90deg, #adff2f 20%, #7d7f84 0%);
+  cursor: pointer;
+}
+
+#player .right-content .volume .fa-circle{
+  position: absolute;
+  display: none;
+  left: 19%;
+  top: -5px;
+}
+
+#player .right-content .volume:hover .fa-circle{
+  display: block;
 }
 
 /* REGOLE EXTRA SMALL */
