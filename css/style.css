@@ -31,7 +31,7 @@ a{
   justify-content: space-between;
   min-width: 230px;
   height: 100%;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   color: #fff;
   background-color: #000;
 }
@@ -39,12 +39,12 @@ a{
 #large-menu a{
   display: block;
   margin-top: 5px;
+  padding-left: 10px;
   color: #7d7f84;
 }
 
 #large-menu a:hover{
   color: #fff;
-  border-left: 2px solid #adff2f;
 }
 
 /* contenuto superiore */
@@ -58,6 +58,16 @@ a{
 
 #large-menu .top-content h3{
   margin-top: 30px;
+  padding-left: 10px;
+}
+
+#large-menu .top-content i{
+  font-size: 20px;
+}
+
+#large-menu .pages a:hover{
+  color: #fff;
+  border-left: 2px solid #adff2f;
 }
 
 /* contenitore della playlist */
@@ -68,6 +78,10 @@ a{
 /* contenuto inferiore */
 #large-menu .bottom-content hr{
   margin-top: 10px;
+}
+
+#large-menu .bottom-content h3{
+  padding-left: 10px;
 }
 
 /* MENU KATERALE PICCOLO */
@@ -240,6 +254,11 @@ a{
   background-color: #282828;
 }
 
+#player i:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /* contenuto sinistro */
 #player .left-content{
   width: 230px;
@@ -295,8 +314,8 @@ a{
   margin: 0 10px;
 }
 
-#player .central-content .top-content .fa-play-circle:hover{
-  transform: scale(1.1);
+#player .central-content .top-content .fa-play-circle{
+  font-size: 30px;
 }
 
 /* contenuto inferiore */
@@ -362,6 +381,10 @@ a{
 
   .container ul li{
     margin-bottom: 10px;
+  }
+
+  #player .central-content{
+    padding: 0 5px;
   }
 
   #player .right-content{
